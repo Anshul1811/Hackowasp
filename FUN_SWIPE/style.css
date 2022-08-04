@@ -1,0 +1,189 @@
+/* css resest  */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* css variables  */
+
+/* navigation bar  */
+#navbar{
+    display: flex;/*ek row me arrange*/
+    align-items: center;
+    position: relative;
+    
+}
+/*navigation bar: logo and image  */
+   #logo{
+       margin-top: 0px;
+   }
+
+   #logo img{
+       height: 86px;
+       margin: 3px 5px ;
+   }
+
+/*navigation bar: list styling  */
+/* #navbar{
+    position: relative; */
+/* } */
+
+#navbar ul{
+    display: flex;/*ek line me arrange*/
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;/*content opper aa jayega*/
+    opacity: 0.5;
+}
+#navbar ul li {
+    /*color: white;*/
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color: rgb(20, 6, 6);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    }
+    #navbar ul li a:hover{
+        color: rgb(10, 10, 10);
+        background-color: aliceblue;
+      
+        }
+        /* home section  */
+        #home{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 590px;
+            justify-content: center;
+            align-items: center;
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            background:url('img/fooood.jpg') no-repeat center center/cover ;
+            height: 140%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+
+        }
+        home h1{
+            color: white;
+            text-align: center;
+        }
+        home p{
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        /*services section*/
+        #services{
+            
+            display: flex;
+            margin-top: 0px;
+        }
+        #services .box{
+           border: 2px solid rgb(167, 156, 216);
+         padding:34px;
+         margin-top: 200px;
+         margin-left: 10px;
+         margin-right: 10px;
+         border-radius: 28px;
+         background: #ded6f2;
+         
+        }
+        #services .box img{
+           height: 160px;
+           margin: auto;
+           display: block;
+        }
+        #services{} 
+        #services{}
+        #services{} 
+        #services{} 
+        #services{}
+
+
+        /* utility classes  */
+        .h-primary{
+            font-size: 3.8rem;
+            padding: 12px;
+
+        }
+        .h-secondary{
+            font-size: 2.8rem;
+            padding: 12px;
+
+        }
+        .btn{
+            padding: 6px 20px;
+            border: 2px solid rgb(240, 239, 243);
+            background-color: rgb(178, 182, 224);
+            color: aliceblue;
+            margin: 17px;
+            font-size: 1.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            font-style: bold;
+        }
+
+        .center{
+            text-align: center;
+        }
+ 
+        .services-container{
+         background-image: url("img/shop.jpg");
+         height: 800px;
+         width: 100%;
+        }
+
+
+        #space{
+            color: rgb(7, 51, 21);
+        }
+
+        #cosh1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .card{
+            float: right;
+            margin: 100px;
+           
+        }
+
+        .wrapchick{
+            text-align: center;
+        }
+        .desert{
+            text-align: center;
+        }
+        .pizza_nation{
+            text-align: center;
+        }
+
+        .top_cosbg{
+            background: url('img/background.jpg');
+            height: 800px;  
+        }
+
+        #contact{
+          font-size: 80px;
+        }
+
+
+        
